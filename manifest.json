@@ -1,6 +1,6 @@
 {
-    "name": "msa_event_attendance",
-    "short_name": "msa_event_attendance",
+    "name": "yeos_catch_bottle",
+    "short_name": "yeos_catch_bottle",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
