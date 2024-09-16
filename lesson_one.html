@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene vr-mode-ui="enabled: false" fog="type: linear; color: #000; far: 30; near: 0">
+        <a-sphere position="-3 0 0" translate="0 1.75 0" radius="1.75" color="#7BC8A4" roughness="0.2">
+            <!-- <a-image src="../_images/radial-shadow-3.png" rotation="-90 0 0" scale="1.75 1.75 1.75"></a-image> -->
+        </a-sphere>
+        <a-entity geometry="primitive: plane; height: 500; width: 500" position="0 -0.5 0" rotation="-90 0 0"
+            material="shader: flat; src: url(images/grass.png); repeat: 300 300"></a-entity>
+
+    </a-scene>
+</body>
+
+</html>
