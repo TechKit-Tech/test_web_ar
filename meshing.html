@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-mesh-particles-component@^0.4.0/aframe-mesh-particles-component.js"></script>
+</head>
+
+<body>
+    <a-scene background="transparent: true">
+        <a-assets>
+            <a-asset-item id="cans" src="./cans.gltf"></a-asset-item>
+            <a-asset-item id="car" src="./cavalo.glb"></a-asset-item>
+        </a-assets>
+        <a-gltf-model id="model" src="car" scale="0.5 0.5 0.5" visible="false"></a-gltf-model>
+
+        <a-entity position="0 5 -5"
+            mesh-particles="entity: #model; velocity: .1 1 .1; acceleration: 0 -1 0..0 -2 0"></a-entity>
+        <a-box color="red" position="0 0 -5" mesh-particles="radialVelocity: 1..2"></a-box>
+
+    </a-scene>
+</body>
+
+</html>
